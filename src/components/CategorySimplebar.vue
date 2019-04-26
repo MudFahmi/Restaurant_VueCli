@@ -50,18 +50,7 @@ export default {
   components: {
     vueCustomScrollbar
   },
-  data() {
-    return {
-      settings: {
-        maxScrollbarLength: 60
-      }
-    }
-  },
-  methods: {
-    scrollHanle(evt) {
-      console.log(evt)
-    }
-  }
+  
 }
 </script>
 
