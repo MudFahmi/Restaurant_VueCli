@@ -203,7 +203,11 @@ import TheFooter from "@/components/TheFooter.vue";
 export default {
 components:{
   TheFooter,
-}
+},
+
+beforeCreate() {
+    document.body.className = 'home';
+},
 };
 </script>
 
@@ -211,6 +215,7 @@ components:{
 
 html,body {
 	width: 100%;height: 100%;margin: 0;
+  
 }
 body {
     
@@ -218,9 +223,9 @@ body {
      background-size: cover; 
 }
 
-.back{
+.background-pic{
 	width: 100%;height: 100%;margin: 0;top: 0;
-  background-image: url("../assets/images/background.png")!important;
+  
 }
 ::-webkit-input-placeholder { /* Edge */
   color: #bbb;

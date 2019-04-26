@@ -28,11 +28,11 @@ export default {
     TheSidebar,
     
   },
-  
 };
 </script>
 
 <style>
+
 body {
   width: 100%;
   height: 100%;
@@ -43,6 +43,14 @@ body {
   font-family: "Montserrat", sans-serif;
   overflow: hidden;
 }
+
+body.home {
+ background-image: url("./assets/images/background.png") ;
+}
+body.then {
+    background-color: #ddd;
+}
+
 a:hover {
   text-decoration: none;
 }
