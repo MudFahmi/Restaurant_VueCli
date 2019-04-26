@@ -26,7 +26,7 @@
           data-simplebar
           data-simplebar-auto-hide="true"
         >
-          <div class="third-sec tabs in">
+          <div class="third-sec tabs in scroll">
             <div class="order-container">
               <div class="third-subbox">
                 <p class="thirdname">Pizza Salami</p>
@@ -101,7 +101,7 @@
             </div>
           </div>
 
-          <div class="third-sec2 tabs">
+          <div class="third-sec2 tabs scroll">
             <div class="order-container">
               <div class="third-subbox">
                 <p class="thirdname">Pizza Salami</p>
@@ -175,7 +175,7 @@
               </div>
             </div>
           </div>
-          <div class="third-sec3 tabs">
+          <div class="third-sec3 tabs scroll">
             <div class="order-container">
               <div class="third-subbox">
                 <p class="thirdname">Pizza Salami</p>
@@ -328,8 +328,8 @@
      
 
       <div class="fourth">
-        <div class="fourthsec" data-simplebar data-simplebar-auto-hide="true">
-          <div class="fourth-box">
+        <div class="fourthsec scroll2" data-simplebar data-simplebar-auto-hide="true">
+          <div class="fourth-box ">
             <div class="fourth-head">
               <div class="fourth-head-left">
                 <span class="label">04</span>
@@ -475,14 +475,7 @@
           </div>
         </div>
         <div class="complate-order">
-          <div class="updown">
-            <div onclick="slideUp()" class="up">
-              <i class="fa fa-angle-up"></i>
-            </div>
-            <div onclick="slideDown()" class="down">
-              <i class="fa fa-angle-down"></i>
-            </div>
-          </div>
+         
           <div class="totalsec">
             <div class="totalsecpart">
               <span class="total-left">Total</span>
@@ -613,5 +606,19 @@ export default {
 .inner-tabs.in {
   display: block;
 }
+.scroll{
+   
+ 
+  height: 550px;
+  padding: 15px;
+ 
+}
+.scroll2{
+   
 
+  height: 640px;
+  
+  
+  
+}
 </style>

@@ -60,7 +60,7 @@
             </div>
             <div class="all-orders grass-bg">
               <div
-                class="inner-tabs ofb in orders-filtered-by-all"
+                class="scroll inner-tabs ofb in orders-filtered-by-all"
                 data-simplebar
                 data-simplebar-auto-hide="true"
               >
@@ -258,7 +258,7 @@
                 </div>
               </div>
               <div
-                class="inner-tabs ofb orders-filtered-by-success"
+                class="scroll inner-tabs ofb orders-filtered-by-success"
                 data-simplebar
                 data-simplebar-auto-hide="true"
               >
@@ -312,7 +312,7 @@
                 </div>
               </div>
               <div
-                class="inner-tabs ofb orders-filtered-by-danger"
+                class="scroll inner-tabs ofb orders-filtered-by-danger"
                 data-simplebar
                 data-simplebar-auto-hide="true"
               >
@@ -366,7 +366,7 @@
                 </div>
               </div>
               <div
-                class="inner-tabs ofb orders-filtered-by-warning"
+                class="scroll inner-tabs ofb orders-filtered-by-warning"
                 data-simplebar
                 data-simplebar-auto-hide="true"
               >
@@ -481,7 +481,7 @@
             </div>
             <div class="all-orders grass-bg">
               <div
-                class="inner-tabs ofb in orders-filtered-by-all"
+                class="scroll inner-tabs ofb in orders-filtered-by-all"
                 data-simplebar
                 data-simplebar-auto-hide="true"
               >
@@ -583,7 +583,7 @@
                 </div>
               </div>
               <div
-                class="inner-tabs ofb orders-filtered-by-success"
+                class="scroll inner-tabs ofb orders-filtered-by-success"
                 data-simplebar
                 data-simplebar-auto-hide="true"
               >
@@ -653,7 +653,7 @@
                 </div>
               </div>
               <div
-                class="inner-tabs ofb orders-filtered-by-danger"
+                class="scroll inner-tabs ofb orders-filtered-by-danger"
                 data-simplebar
                 data-simplebar-auto-hide="true"
               >
@@ -723,7 +723,7 @@
                 </div>
               </div>
               <div
-                class="inner-tabs ofb orders-filtered-by-warning"
+                class="scroll inner-tabs ofb orders-filtered-by-warning"
                 data-simplebar
                 data-simplebar-auto-hide="true"
               >
@@ -810,7 +810,7 @@
 
         <div class="orders-filtered tabs" id="orders-notifications">
           <div
-            class="ofb grass-bg"
+            class="scroll ofb grass-bg"
             data-simplebar
             data-simplebar-auto-hide="true"
           >
@@ -951,7 +951,15 @@ export default {
 </script>
 
 <style scoped>
-
+.scroll{
+   
+  float: left;
+  height: 550px;
+  padding: 15px;
+  box-sizing: border-box;
+  border-right: 1px solid #ddd;
+  scroll-padding: 50px 50px 50px 50px;
+}
 
 
 </style>
