@@ -13,9 +13,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "jquery/src/jquery.js";
 import "bootstrap/dist/js/bootstrap.min.js";
 
-/* import "simplebar/dist/simplebar.min.css";
+import "simplebar/dist/simplebar.min.css";
 import "simplebar/dist/simplebar.min.js";
- */
+
 import "@/assets/pos-icons/font/flaticon.css";
 import "@/assets/js/common.js";
 

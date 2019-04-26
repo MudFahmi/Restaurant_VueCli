@@ -1,51 +1,51 @@
 <template>
-  <div>
-    <div class="main">
-      <div class="box1">
-        <div class="imgsec">
+  <div class="back">
+    <div class="main1">
+      <div class="box11">
+        <div class="imgsec1">
           <img src="@/assets/images/grass.jpg">
         </div>
-        <div class="namesec">
-          <button class="d-button">Delivery</button>
+        <div class="namesec1">
+          <button class="d-button1">Delivery</button>
         </div>
-        <div class="signsec">
-          <div class="signin">Sign In</div>
+        <div class="signsec1">
+          <div class="signin1">Sign In</div>
           <!-- <div class="forget">Forget Password</div> -->
         </div>
-        <div class="img_box1">
+        <div class="img_box11">
           <img src="@/assets/images/delivery.png">
         </div>
         <!-- <p class="img_label">Delivery Services</p> -->
       </div>
-      <div class="box2">
-        <div class="imgsec">
+      <div class="box21">
+        <div class="imgsec1">
           <img src="@/assets/images/grass.jpg">
         </div>
-        <div class="namesec">
-          <button class="d-button" style="padding: 15px 57px;">Reservation</button>
+        <div class="namesec1">
+          <button class="d-button1" style="padding: 15px 57px;">Reservation</button>
         </div>
-        <div class="signsec">
-          <div class="signin">Sign In</div>
+        <div class="signsec1">
+          <div class="signin1">Sign In</div>
           <!-- <div class="forget">Forget Password</div>
           -->
         </div>
-        <div class="img_box2">
+        <div class="img_box21">
           <img src="@/assets/images/reservation.png">
         </div>
         <!-- <p class="img_label">Online Reservations</p> -->
       </div>
-      <div class="box3">
-        <div class="imgsec">
+      <div class="box31">
+        <div class="imgsec1">
           <img src="@/assets/images/grass.jpg">
         </div>
-        <div class="namesec">
-          <button class="d-button" style="padding: 15px 81px;">Dinner</button>
+        <div class="namesec1">
+          <button class="d-button1" style="padding: 15px 81px;">Dinner</button>
         </div>
-        <div class="signsec">
-          <div class="signin">Sign In</div>
+        <div class="signsec1">
+          <div class="signin1">Sign In</div>
           <!-- <div class="forget">Forget Password</div> -->
         </div>
-        <div class="img_box3">
+        <div class="img_box31">
           <img src="@/assets/images/dinner.png">
         </div>
         <!-- <p class="img_label">Takeaway</p> -->
@@ -299,9 +299,13 @@ html,body {
 	width: 100%;height: 100%;margin: 0;
 }
 body {
-     background-image: url("../assets/images/background.png");
+    
      font-family: 'Montserrat', sans-serif;
      background-size: cover; 
+}
+
+.back{
+	width: 100%;height: 100%;margin: 0;top: 0;
 }
 ::-webkit-input-placeholder { /* Edge */
   color: #bbb;
@@ -314,26 +318,27 @@ body {
 ::placeholder {
   color: #bbb;
 }
-.main {width: 1000px;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);text-align: center;}
-.box1,.box2,.box3 {width: calc(33.33% - 40px);height: auto;float: left;position: relative;margin: 0 20px;overflow: hidden;border-radius: 5px;}
-.imgsec {height: 125px;overflow: hidden;}
-.imgsec img {width: 100%;float: left;}
-.namesec {height: auto;background: #fff;float: left;width: 100%;}
-.d-button {margin-top: 120px;background: #35A5DD;border: none;padding: 15px 75px;border-radius: 5px;color: #fff;font-weight: normal;font-size: 22px;margin-bottom: 15px;cursor: pointer;font-family: montserrat;}
-.d-button:hover {background: #60b1da;}
-.signsec {width: 100%;float: left;border-top: 1px solid #d3d3d3;background: #fff;}
-.signin {width: 100%;float: left;padding: 20px 15px;box-sizing: border-box;color: #424242;font-size: 14px;cursor: pointer;}
-.signin:hover {background: #749f01;transition: 0.3s ease;color: #fff;}
+.main1 {
+   width: 1000px;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);text-align: center;}
+.box11,.box21,.box31 {width: calc(33.33% - 40px);height: auto;float: left;position: relative;margin: 0 20px;overflow: hidden;border-radius: 5px;}
+.imgsec1 {height: 125px;overflow: hidden;}
+.imgsec1 img {width: 100%;float: left;}
+.namesec1 {height: auto;background: #fff;float: left;width: 100%;}
+.d-button1 {margin-top: 120px;background: #35A5DD;border: none;padding: 15px 75px;border-radius: 5px;color: #fff;font-weight: normal;font-size: 22px;margin-bottom: 15px;cursor: pointer;font-family: montserrat;}
+.d-button1:hover {background: #60b1da;}
+.signsec1 {width: 100%;float: left;border-top: 1px solid #d3d3d3;background: #fff;}
+.signin1 {width: 100%;float: left;padding: 20px 15px;box-sizing: border-box;color: #424242;font-size: 14px;cursor: pointer;}
+.signin1:hover {background: #749f01;transition: 0.3s ease;color: #fff;}
 .forget {width: 50%;float: left;padding: 20px 14px;box-sizing: border-box;color: #424242;font-size: 14px;cursor: pointer;}
 .forget:hover {background: #35A5DD;transition: 0.3s ease;color: #fff;}
-.img_box1,.img_box2,.img_box3 {position: absolute;width: 115px;height: 115px;background: green;border-radius: 50%;top: 50%;left: 50%;transform: translate(-50%, -50%);margin-top: -63px;}
-.img_box1 img,.img_box2 img,.img_box3 img {width: 100%;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);margin-top: 20px;}
-.img_box1 {background: #ffe6e7;}
-.img_box2 {background: #f3f3f3;}
-.img_box3 {background: #e2f0d9;}
-.img_box1 img {width: 90%;margin-top: 12px;margin-left: -6px;}
-.img_box2 img {width: 80%;margin-top: 12px;}
-.img_box3 img {width: 60%;margin-top: 12px;}
+.img_box11,.img_box21,.img_box31 {position: absolute;width: 115px;height: 115px;background: green;border-radius: 50%;top: 50%;left: 50%;transform: translate(-50%, -50%);margin-top: -63px;}
+.img_box11 img,.img_box21 img,.img_box31 img {width: 100%;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);margin-top: 20px;}
+.img_box11 {background: #ffe6e7;}
+.img_box21 {background: #f3f3f3;}
+.img_box31 {background: #e2f0d9;}
+.img_box11 img {width: 90%;margin-top: 12px;margin-left: -6px;}
+.img_box21 img {width: 80%;margin-top: 12px;}
+.img_box31 img {width: 60%;margin-top: 12px;}
 .img_label {position: absolute;bottom: -15px;width: 100%;text-align: center;font-weight: 550;color: #000;font-size: 14px;}
 .footer {position: fixed;height: 45px;background: #ffffff;width: 100%;bottom: 0;text-align: center;font-weight: 700;padding: 12px 0;box-sizing: border-box;color: #424242;}
 .sitename {font-size: 14px;}
@@ -459,15 +464,15 @@ body {
 /*----------media query-----------*/
 
 @media (max-width: 1000px) {
-    .main {width: 100%;float: left;}
-    .box1,.box2,.box3 {width: calc(50% - 40px);float: left;margin-bottom: 20px;}
+    .main1 {width: 100%;float: left;}
+    .box11,.box21,.box31 {width: calc(50% - 40px);float: left;margin-bottom: 20px;}
 }
 @media (max-width: 768px) {
     .lang-sec {box-sizing: border-box;width: calc(100% - 30px);margin: 15px;left: 0;transform: translatey(-50%);}
 }
 @media(max-width: 670px) { 
-    .main {width: 100%;position: static;transform: none;padding: 15px 0 45px 0;}
-    .box1,.box2,.box3 {width: calc(100% - 40px);float: left;margin-bottom: 20px;}
+    .main1 {width: 100%;position: static;transform: none;padding: 15px 0 45px 0;}
+    .box11,.box21,.box31 {width: calc(100% - 40px);float: left;margin-bottom: 20px;}
     .creat-pass {width: 100%;float: left;}
 }
 @media(max-width: 500px) {
@@ -477,7 +482,7 @@ body {
     .lang p {margin: 0;}
 }
 @media(max-width: 400px) {
-    .signin {padding: 20px 7px;}
+    .signin1 {padding: 20px 7px;}
     .forget {padding: 20px 7px;}
     .sitename{font-size: 10px;}
     .creat-pass {padding: 15px;}

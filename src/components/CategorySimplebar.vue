@@ -1,6 +1,7 @@
 <template>
 
-   <div class="second" data-simplebar data-simplebar-auto-hide="true">
+<div class="second" data-simplebar data-simplebar-auto-hide="true">
+  
         <div class="second-box">
           <div class="second-text">Pizza</div>
         </div>
@@ -40,26 +41,39 @@
         <div class="second-box">
           <div class="second-text">Pizza</div>
         </div>
-      </div>
-
+</div>
 </template>
 
 <script>
-
-
+import vueCustomScrollbar from 'vue-custom-scrollbar'
 export default {
-
+  components: {
+    vueCustomScrollbar
+  },
+  data() {
+    return {
+      settings: {
+        maxScrollbarLength: 60
+      }
+    }
+  },
+  methods: {
+    scrollHanle(evt) {
+      console.log(evt)
+    }
+  }
 }
 </script>
 
 <style scoped>
+
 
 /* second Start */
 
 .second {
   width: 15%;
   float: left;
-  height: 100%;
+  height: 700px;
   padding: 15px;
   box-sizing: border-box;
   border-right: 1px solid #ddd;
