@@ -1,9 +1,10 @@
 <template>
   <div id="app">
   
-  <the-sidebar/>
+  <the-sidebar v-if="$store.getters.sidebar"/>
  
   <router-view />
+
 
   </div>
 </template>
@@ -21,10 +22,13 @@ import "@/assets/js/common.js";
 
 import TheSidebar from "@/components/TheSidebar.vue";
 
+
 export default {
   components: {
-    TheSidebar
-  }
+    TheSidebar,
+    
+  },
+  
 };
 </script>
 
